@@ -1,5 +1,5 @@
 include_recipe "myapp"
-include_recipe "apache"
+include_recipe "apache2"
 
 # php 7.0
 execute "add-apt-repository" do
