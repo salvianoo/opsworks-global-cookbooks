@@ -1,0 +1,6 @@
+name "php7"
+description "Instala PHP versao 7.0"
+maintainer "Salviano Ludgerio"
+version "1.0.0"
+depends "myapp"
+depends "apache2"
