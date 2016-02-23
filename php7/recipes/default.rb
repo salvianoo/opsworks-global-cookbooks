@@ -13,6 +13,7 @@ end
 node['php7']['packages'].each do |pkg|
   apt_package pkg do
     action :install
+    options '--force-yes'
   end
 end
 
