@@ -1,6 +1,9 @@
 apt_package "apache2" do
   action :install
-  notifies :start, "service[apache2]"
+end
+
+service "apache2" do
+  action [ :enable, :start ]
 end
 
 execute "Disable Event" do
