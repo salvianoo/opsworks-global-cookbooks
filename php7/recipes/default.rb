@@ -13,6 +13,9 @@ end
 node['php7']['packages'].each do |pkg|
   apt_package pkg do
     action :install
-    notifies :restart, "service[apache2]"
   end
+end
+
+execute "Enable mods: php7.0" do
+  command "sudo a2enmod php7.0"
 end
